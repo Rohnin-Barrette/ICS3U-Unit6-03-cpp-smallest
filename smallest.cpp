@@ -13,7 +13,7 @@ int smallest_finder(std::array<int, N> number_list) {
     // this function finds the smallst number in a list
     int loop_item;
 
-    int smallest = number_list[9];
+    int smallest = number_list[0];
 
     for (int loop_item : number_list) {
         if (loop_item < smallest) {
@@ -44,5 +44,6 @@ int main() {
     }
     smallest_number = smallest_finder(number_list);
     std::cout << "\n\nThe smallest number is " << smallest_number << std::endl;
+    
     std::cout << "\nDone." << std::endl;
 }
